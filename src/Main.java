@@ -42,7 +42,26 @@ public class Main {
         System.out.println("\nSum: "+ prob3sum);
 
         // Problem 4
-        System.out.println("\n\nProblem #4:");
+        System.out.println("\nProblem #4:");
+        int temp = 0;
+        int[] problem4 = {34,-56,78,2,-5,-89,54,23};
+
+        for (int i = 0; i < problem4.length; i++)
+        {
+            for (int j = i + 1; j < problem4.length; j++)
+            {
+                if (problem4[i] > problem4[j])
+                {
+                    temp = problem4[i];
+                    problem4[i] = problem4[j];
+                    problem4[j] = temp;
+                }
+            }
+        }
+
+        for (int i=0; i< problem4.length; i++) {
+            System.out.print(problem4[i] + ", ");
+        }
 
     }
 }
