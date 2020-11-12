@@ -46,12 +46,9 @@ public class Main {
         int temp = 0;
         int[] problem4 = {34,-56,78,2,-5,-89,54,23};
 
-        for (int i = 0; i < problem4.length; i++)
-        {
-            for (int j = i + 1; j < problem4.length; j++)
-            {
-                if (problem4[i] > problem4[j])
-                {
+        for (int i = 0; i < problem4.length; i++) {
+            for (int j = i + 1; j < problem4.length; j++) {
+                if (problem4[i] > problem4[j]) {
                     temp = problem4[i];
                     problem4[i] = problem4[j];
                     problem4[j] = temp;
